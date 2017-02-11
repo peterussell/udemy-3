@@ -7,6 +7,7 @@ import YTSearch from 'youtube-api-search';
    because they live in node_modules. */
 
 import SearchBar from './components/search_bar';
+import VideoList from './components/video_list';
 
 const API_KEY = 'AIzaSyA1zjtE8DuqwjysYaNvcfIGS_x-Mk9VItk';
 
@@ -27,6 +28,7 @@ class App extends Component {
     return (
       <div>
         <SearchBar />
+        <VideoList videos={this.state.videos} />
       </div>
     );
   }
